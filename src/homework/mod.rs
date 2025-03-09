@@ -1,6 +1,6 @@
 mod hw01;
 mod hw02;
-mod hw03;
+pub mod hw03;
 mod hw04;
 mod hw05;
 mod hw06;
