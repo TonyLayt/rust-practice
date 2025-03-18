@@ -1,4 +1,4 @@
-const WIDTH: usize = 10;  // Ширина конверта (кількість символів)
+const WIDTH: usize = 20;  // Ширина конверта (кількість символів)
 const HEIGHT: usize = 10; // Висота конверта (кількість рядків)
 
 pub fn draw_an_envelope() {
@@ -10,7 +10,7 @@ pub fn draw_an_envelope() {
                 output.push('*'); // Верхня та нижня межі
             } else if x == 0 || x == WIDTH {
                 output.push('*'); // Бокові межі
-            } else if x == y || x == WIDTH - y {
+            } else if x == y*2 || x == WIDTH - y*2 {
                 output.push('*'); // Діагональні лінії
             } else {
                 output.push(' '); // Порожні місця всередині
