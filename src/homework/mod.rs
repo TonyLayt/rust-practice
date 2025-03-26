@@ -2,7 +2,7 @@ mod hw01;
 mod hw02;
 pub mod hw03;
 pub mod hw04;
-mod hw05;
+pub mod hw05;
 mod hw06;
 mod hw07;
 mod hw08;
