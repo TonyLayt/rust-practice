@@ -1,4 +1,3 @@
-
 pub fn draw_tree(triangle_count: usize) {
     // Проходимо по кожному трикутнику
     for i in 0..triangle_count {
@@ -12,4 +11,9 @@ pub fn draw_tree(triangle_count: usize) {
             println!("{}{}", spaces, stars);
         }
     }
+}
+
+#[test]
+fn test (){
+    draw_tree(4);
 }

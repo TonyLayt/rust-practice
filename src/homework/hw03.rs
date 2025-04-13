@@ -1,4 +1,4 @@
-const WIDTH: usize = 25;  // Ширина конверта (кількість символів)
+const WIDTH: usize = 28;  // Ширина конверта (кількість символів)
 const HEIGHT: usize = 10; // Висота конверта (кількість рядків)
 
 pub fn draw_an_envelope() {
