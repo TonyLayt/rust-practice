@@ -6,5 +6,7 @@ fn main() {
     //homework::hw04::drawing_a_diamond();
     //homework::hw05::test();
     //homework::hw06::draw_tree(6);
-    //homework::hw07::test()
+    //homework::hw07::test();
+    //homework::hw08::prime_number(4);
+    homework::hw10::is_palindrome_number(1211);
 }
