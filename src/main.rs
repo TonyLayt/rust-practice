@@ -12,13 +12,17 @@ fn main() {
     //let vec = homework::hw11::gen_random_vector(20);
     //homework::hw11::print_vector_and_min_pair(&vec);
 
-    let arr = vec![8, 2, 2, 4, 4];
-    match homework::hw12::count_permutation(&arr) {
-        Ok(moves) => {
-            let new_vec = homework::hw12::gen_shipments(arr.clone(), (arr.iter().sum::<u32>() / arr.len() as u32));
-            println!("Новий вектор: {:?}", new_vec);
-        },
-        Err(e) => println!("Помилка: {}", e),
-    }
+    // let arr = vec![8, 2, 2, 4, 4];
+    // match homework::hw12::count_permutation(&arr) {
+    //     Ok(moves) => {
+    //         let new_vec = homework::hw12::gen_shipments(arr.clone(), (arr.iter().sum::<u32>() / arr.len() as u32));
+    //         println!("Новий вектор: {:?}", new_vec);
+    //     },
+    //     Err(e) => println!("Помилка: {}", e),
+    // }
 
+    //homework::hw13::area_occupied_test();
+    homework::hw15::solve_muxa_slon();
 }
+
+
