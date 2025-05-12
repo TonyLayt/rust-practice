@@ -1,12 +1,12 @@
 pub fn solve_muxa_slon() {
     let mut count = 0;
 
-    for m in 1..10 { // перша цифра не може бути 0
-        for u in 0..10 {
+    for m in 1..9 { // від 1 до 8
+        for u in 1..9 {
             if u == m { continue; }
-            for x in 0..10 {
+            for x in 1..9 {
                 if x == m || x == u { continue; }
-                for a in 1..10 { // множник "a" теж не може бути 0
+                for a in 1..9 {
                     if a == m || a == u || a == x { continue; }
 
                     let muxa = m * 1000 + u * 100 + x * 10 + a;
@@ -21,7 +21,13 @@ pub fn solve_muxa_slon() {
                     let o = (product / 10) % 10;
                     let n = product % 10;
 
-                    // всі цифри мають бути різними
+                    // всі цифри мають бути від 1 до 8
+                    let result_digits = [s, l, o, n];
+                    if result_digits.iter().any(|&d| d < 1 || d > 8) {
+                        continue;
+                    }
+
+                    // усі 8 цифр мають бути різними
                     let digits = [m, u, x, a, s, l, o, n];
                     let mut unique = digits.to_vec();
                     unique.sort();
